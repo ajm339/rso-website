@@ -1,0 +1,35 @@
+.wrapERROR {
+  float:right;
+}
+
+.wrapper {
+  position: relative;
+  top: 60px;
+  margin: auto;
+  width: 82%;
+  min-height: 600px;
+  padding: 2% 0 2% 4%;
+  background-color: darken(white, 2%);
+  border-top: solid 2px black;
+
+  z-index:1;
+}
+
+.container {
+  margin: 0pt auto;
+  width:950px;
+}
+
+.padding {
+  width: 95%;
+  padding: 0 15px 0 0;
+  margin: 15px 0 0 0;
+}
+
+.clear {
+  float:right;
+}
+
+.right {
+  float: right;
+}

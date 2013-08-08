@@ -1,0 +1,33 @@
+#top {
+  padding:0;
+  margin:0;
+  width: 100%;
+}
+
+#header{
+  background-color: #353D45;
+  height:80px;
+  position:absolute;
+  z-index :5;
+  top: 0px;
+  left:0px;
+  width:100%;
+}
+
+#headerSHRINK {
+  position:relative;
+  width:88%;
+  margin:auto;
+  z-index:6;
+}
+
+#header img {
+  display: inline;
+  width: 80px;
+  height: 80px;
+}
+
+#header form{
+  text-align: right;
+  position: relative;
+}

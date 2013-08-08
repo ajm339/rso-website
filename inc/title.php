@@ -67,9 +67,8 @@
 ?>
 <div id = "formCONTAINER">
 	<form action="?action=login" method="post">
-		<p class="clear"><span class="white1">Login to view extra content!</span>
+		<p class="clear"><span class="white">Login to view extra content!</span>
 			<input type="text" id="username" name="username" placeholder="Username" />
-			<!--<input type="text" id="fakePassword" name="fakePassword" placeholder="Password" />-->
 			<input type="password" id="realPassword" name="realPassword" placeholder="Password"/>
 			<input type="submit" name="submit" value="Log In" />
 		</p>
@@ -94,11 +93,11 @@
 		if (isset($_SESSION["admin"])) { //welcome the admin, provide logout
 			$query = $mysqli->query("SELECT * FROM Students WHERE studentnetID='$_SESSION[admin]'");
 			$array = $query->fetch_assoc();
-			print("<p class=\"clear\"><span class=\"white\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
+			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
 		} else { //welcome the student, provide logout
 			$query = $mysqli->query("SELECT * FROM Students WHERE studentnetID='$_SESSION[student]'");
 			$array = $query->fetch_assoc();
-			print("<p class=\"clear\"><span class=\"white\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
+			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
 		}
 	}
 	$mysqli->close();

@@ -1,0 +1,45 @@
+@mixin table-element($bgcolor) {
+  padding: 4px;
+  background-color: $bgcolor;
+}
+
+@mixin table-link($color) {
+  color: $color;
+  text-decoration: none;
+}
+
+table {
+  margin-top: 15px;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 90%;
+
+  caption {
+    text-align: left;
+    padding-bottom: 4px;
+  }
+
+  th {
+    @include table-element(#9FC9EB);
+  }
+
+  th {
+    @include table-element(#D0EAFA);
+  }
+
+  a {
+    &:link {
+      @include table-link(#283891);
+    }
+    &:visited {
+      @include table-link(#363D45);
+    }
+    &:hover {
+      @include table-link(#B2B2D3);
+    }
+    &:active {
+      @include table-link(#283891);
+    }
+  }
+}
