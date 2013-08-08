@@ -11,10 +11,10 @@
     <script type="text/javascript" src="scripts/jquery-bp.js" ></script>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-  <script type="text/javascript" src="js/jquery.js" ></script>
-<script type="text/javascript" src="js/jquery-bp.js" ></script>
-<script type="text/javascript" src="js/navigation.js" ></script>
-</head>
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/jquery-bp.js" ></script>
+    <script type="text/javascript" src="js/navigation.js" ></script>
+  </head>
   <body>
   <? require('inc/header.php'); ?>
 
@@ -122,12 +122,11 @@ if (isset($_SESSION["admin"]) || isset($_SESSION["student"])) {
         }
 
         print("<br>Add a review for this professor!");
-
-        $courses = $mysqli->query("SELECT DISTINCT(courseID), CourseName FROM Classes ORDER BY CourseName");
 ?>
         <form action="rate.php?professor=<?php echo $_GET["professor"] ?>" method="post">
           Course: <select name="courseID" required>
 <?php
+        $courses = $mysqli->query("SELECT DISTINCT(courseID), CourseName FROM Classes WHERE classapproved = 1 ORDER BY CourseName");
         while($array = $courses->fetch_assoc()) {
           print("<option value=\"$array[courseID]\">$array[CourseName]</option>");
         }
