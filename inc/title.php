@@ -93,11 +93,11 @@
 		if (isset($_SESSION["admin"])) { //welcome the admin, provide logout
 			$query = $mysqli->query("SELECT * FROM Students WHERE studentnetID='$_SESSION[admin]'");
 			$array = $query->fetch_assoc();
-			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
+			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Logout</a></span></p>");
 		} else { //welcome the student, provide logout
 			$query = $mysqli->query("SELECT * FROM Students WHERE studentnetID='$_SESSION[student]'");
 			$array = $query->fetch_assoc();
-			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Click here to logout</a></span></p>");
+			print("<p class=\"clear\"><span class=\"white right\">Welcome, $array[username]! <a class = \"loginBAR\" href=\"?action=logout\">Logout</a></span></p>");
 		}
 	}
 	$mysqli->close();
