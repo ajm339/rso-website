@@ -5,7 +5,6 @@
   <head>
     <title>Log In</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand:700" />
-    <!--<link rel="stylesheet" type="text/css" href="styles/styles.css" />-->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
     <script type="text/javascript" src="scripts/navigation.js" ></script>
@@ -13,7 +12,6 @@
 
 
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-	<link rel="stylesheet" href="css/borderTEALlogin.css" type="text/css" />
 
   <script type="text/javascript" src="js/jquery.js" ></script>
   <script type="text/javascript" src="js/jquery-bp.js" ></script>
@@ -45,7 +43,7 @@
 		</div>
       </div>
 
-  	<div id='wrapper'>
+  	<div class='wrapper login'>
 
       <!--If students aren't registered for an account, they can register here.-->
       <h1>Account Registration</h1>

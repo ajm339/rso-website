@@ -13,7 +13,6 @@
 
 
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/borderGOLDabout.css" type="text/css" />
 
   <script type="text/javascript" src="js/jquery.js" ></script>
 <script type="text/javascript" src="js/jquery-bp.js" ></script>
@@ -33,7 +32,7 @@
   <div id='about' class='pri-nav active'><div><a href='about.php'>About Us</a></div></div>
   <div id='employers' class='pri-nav'><div><a href='employers.php'>Employers</a></div></div>
   <div id='login' class='pri-nav'><div><a href='login.php'>Log In</a></div></div>
-<?php				   
+<?php
 if(isset($_SESSION['student'])){echo ("<div id='rate' class='pri-nav'><div><a href=\"rate.php\">Rate</a></div></div>
   <div id='discuss' class='pri-nav'><div><a href=\"discuss.php\">Discuss</a></div></div>");}
 
@@ -45,7 +44,7 @@ if(isset($_SESSION['student'])){echo ("<div id='rate' class='pri-nav'><div><a hr
     </div>
     </div>
 
-    <div id='wrapper'>
+    <div class='wrapper about'>
 
     <h1>What We Do</h1>
     <div class="padding">

@@ -13,7 +13,6 @@
 
 
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/borderPURPLEdiscuss.css" type="text/css" />
 
   <script type="text/javascript" src="js/jquery.js" ></script>
 <script type="text/javascript" src="js/jquery-bp.js" ></script>
@@ -44,7 +43,7 @@ if(isset($_SESSION['admin'])){
 </div>
   </div>
 
-  <div id='wrapper'>
+  <div class='wrapper discuss'>
 
 <?php
 //DISCUSSION BOARD

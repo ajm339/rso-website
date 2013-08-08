@@ -1,96 +1,83 @@
 @import url(http://fonts.googleapis.com/css?family=Capriola);
 @import url(http://fonts.googleapis.com/css?family=Capriola);
-/* line 1, ../sass/main.scss */
+/* line 3, ../sass/main.scss */
 body {
-  background: url('/images/background.png') top right no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+  background: #f7f7f7;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  position: relative;
   margin: 0;
   padding: 0;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 .navigation {
-  position: relative;
   z-index: 0;
 }
 
-/* line 16, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 .padding {
-  background-color: #D0EAFA;
   width: 95%;
-  border: none;
-  border-radius: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-top: 15px;
+  padding: 0 15px 0 0;
+  margin: 15px 0 0 0;
 }
 
 /* Let's import the lovely google font, please keep this line at the top of your stylesheet */
-/* line 33, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 h2 {
-  font-family: "Helvetica Neue", Helvetica;
   font-size: 125%;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 h3 {
-  font-family: "Helvetica Neue", Helvetica;
   font-size: 100%;
   color: #3A444D;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 h4 {
-  font-family: "Helvetica Neue", Helvetica;
   font-size: 90%;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .highlight {
   color: #D18B15;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 a.breadcrumbs:link {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 54, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 a.breadcrumbs:visited {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 55, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 a.breadcrumbs:hover {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 56, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 a.breadcrumbs:active {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 58, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 #top {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-/* line 64, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 #header {
   background: url('/images/hdr-bkg.png?1210414124') repeat-x scroll;
   height: 80px;
@@ -101,7 +88,7 @@ a.breadcrumbs:active {
   width: 100%;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 #headerSHRINK {
   position: relative;
   width: 88%;
@@ -109,7 +96,7 @@ a.breadcrumbs:active {
   z-index: 6;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 #header img {
   display: inline;
   background-color: #FFF;
@@ -123,85 +110,85 @@ a.breadcrumbs:active {
   border-radius: 4px;
 }
 
-/* line 94, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 #formCONTAINER {
   float: right;
 }
 
-/* line 98, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 #header form {
   text-align: right;
   position: relative;
 }
 
-/* line 105, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 a#forgot:link {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 106, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 a#forgot:visited {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 107, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 a#forgot:hover {
   color: #83B6FE;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 108, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 a#forgot:active {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 110, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 #forgot {
   position: relative;
   top: -15px;
 }
 
-/* line 115, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 a#back:link {
   color: #398EE6;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 116, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 a#back:visited {
   color: #398EE6;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 117, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 a#back:hover {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 118, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 a#back:active {
   color: #398EE6;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 120, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .clear {
   float: right;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .error {
   position: relative;
   top: -35px;
@@ -210,23 +197,23 @@ a#back:active {
   color: #FF0000;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .white {
   color: white;
   float: right;
 }
 
-/* line 137, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .white1 {
   color: white;
 }
 
-/* line 141, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .wrapERROR {
   float: right;
 }
 
-/* line 145, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 #wrapper {
   position: relative;
   top: 60px;
@@ -245,20 +232,20 @@ a#back:active {
   z-index: 1;
 }
 
-/* line 163, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .container {
   margin: 0pt auto;
   width: 950px;
 }
 
 /*NAV BAR ATTEMPT*/
-/* line 169, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 #navigation {
   width: 100%;
   height: 60px;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 #positionNAV {
   margin: auto;
   width: 82%;
@@ -266,7 +253,7 @@ a#back:active {
   left: 0%;
 }
 
-/* line 187, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 #index, #index div,
 #about, #about div,
 #employers, #employers div,
@@ -280,7 +267,7 @@ a#back:active {
   float: left;
 }
 
-/* line 194, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 #index, #about, #employers, #login, #rate, #discuss, #admin {
   background-image: url('/images/nav.jpg?1368213624');
   background-attachment: scroll;
@@ -288,69 +275,61 @@ a#back:active {
   top: 70px;
 }
 
-/* line 201, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 #index {
   background-position: 0px -25px;
   margin-left: 6px;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 #about {
   background-position: -70px -25px;
   margin-left: 77px;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 200, ../sass/main.scss */
 #employers {
   background-position: -140px -25px;
   margin-left: 148px;
 }
 
-/* line 216, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 #login {
   background-position: -210px -25px;
   margin-left: 219px;
 }
 
-/* line 221, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 #rate {
   background-position: -280px -25px;
   margin-left: 290px;
 }
 
-/* line 226, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 #discuss {
   background-position: -350px -25px;
   margin-left: 361px;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #admin {
   background-position: -420px -25px;
   margin-left: 432px;
 }
 
-/* line 236, ../sass/main.scss */
-#index div, #about div, #employers div, #login div, #rate div, #discuss div, #admin div {
-  background-image: url('/images/white.jpg');
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-position: 0px -60px;
-}
-
-/* line 243, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .pri-nav a {
   display: block;
   text-decoration: none;
   text-indent: -30000px;
 }
 
-/* line 249, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .content {
   margin-top: 160px;
 }
 
-/* line 253, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 #content-title {
   background: url('/images/content-title.png?1210241638') no-repeat scroll;
   height: 323px;
@@ -359,63 +338,63 @@ a#back:active {
 }
 
 /* Let's import the lovely google font, please keep this line at the top of your stylesheet */
-/* line 265, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 a.loginBAR:link {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 266, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 a.loginBAR:visited {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 267, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 a.loginBAR:hover {
   color: #83B6FE;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 268, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 a.loginBAR:active {
   color: #E2E3E3;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 270, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 .padding a:link {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 271, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 .padding a:visited {
   color: #1272B9;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 272, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .padding a:hover {
   color: #B2B2D3;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 273, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .padding a:active {
   color: #283891;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 275, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 .CENTERED {
   position: static;
   width: 100%;
@@ -424,14 +403,14 @@ a.loginBAR:active {
   text-align: left;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 textarea {
   width: 600px;
   height: 120px;
   font-family: "Helvetica Neue", Helvetica;
 }
 
-/* line 289, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .adminBUTTON {
   margin: 20px;
   -moz-box-shadow: inset 0px 1px 0px 0px #bbdaf7;
@@ -454,7 +433,7 @@ textarea {
   text-decoration: none;
 }
 
-/* line 309, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 .adminBUTTON:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
   background: -moz-linear-gradient(center top, #378de5 5%, #79bbff 100%);
@@ -462,25 +441,25 @@ textarea {
   background-color: #378de5;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .adminBUTTON:active {
   position: relative;
   top: 1px;
 }
 
 /* This imageless css button was generated by CSSButtonGenerator.com */
-/* line 320, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 form {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 325, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 th, td {
   padding: 4px;
 }
 
-/* line 329, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 table {
   margin-top: 15px;
   border: 3px;
@@ -489,45 +468,45 @@ table {
   width: 90%;
 }
 
-/* line 337, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 th {
   background: #9FC9EB;
 }
 
-/* line 340, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 td {
   background: #D0EAFA;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 table a:link {
   color: #283891;
   text-decoration: none;
 }
 
 /* unvisited link */
-/* line 345, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 table a:visited {
   color: #363D45;
   text-decoration: none;
 }
 
 /* visited link */
-/* line 346, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 table a:hover {
   color: #B2B2D3;
   text-decoration: none;
 }
 
 /* mouse over link */
-/* line 347, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 table a:active {
   color: #283891;
   text-decoration: none;
 }
 
 /* selected link */
-/* line 349, ../sass/main.scss */
+/* line 331, ../sass/main.scss */
 #USERNAME {
   height: 5px;
   width: 200px;
@@ -535,12 +514,12 @@ table a:active {
   margin: 0;
 }
 
-/* line 356, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 #RESPONSE {
   padding: 10px;
 }
 
-/* line 360, ../sass/main.scss */
+/* line 342, ../sass/main.scss */
 .adminMAINbuttons {
   text-align: left;
   width: 100%;

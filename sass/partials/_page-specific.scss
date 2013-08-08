@@ -1,0 +1,30 @@
+.wrapper {
+
+  &.about {
+    border-color: #D18B15;
+  }
+
+  &.admin {
+    border-color: #B6679A;
+  }
+
+  &.discuss {
+    border-color: #6B5C9B;
+  }
+
+  &.employers {
+    border-color: #3D9958;
+  }
+
+  &.home {
+    border-color: #BE0000;
+  }
+
+  &.login {
+    border-color: #289988;
+  }
+
+  &.rate {
+    border-color: #43849A;
+  }
+}

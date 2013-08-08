@@ -13,7 +13,6 @@
 
 
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/borderPINKadmin.css" type="text/css" />
 
   <script type="text/javascript" src="js/jquery.js" ></script>
 <script type="text/javascript" src="js/jquery-bp.js" ></script>
@@ -39,7 +38,7 @@
   </div>
   </div>
 
-  <div id='wrapper'>
+  <div class='wrapper admin'>
 <?php
 if(isset($_GET["task"])){
   print("<a id='back' href =6 'admin.php'>Back</a>");
