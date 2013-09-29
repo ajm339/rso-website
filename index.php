@@ -38,8 +38,7 @@
     </div>
     <div class="padding">
     <h2>Listserv</h2>
-    <p> <a href="https://lists.cs.cornell.edu/mailman/listinfo/issa-l">Register for our listserv</a> to learn about ISSA meetings, job opportunities, and more.
-    </p>
+    <p>Register for our listserv to learn about ISSA meetings, job opportunities, and more. In order to register, send "issa-l-request@cornell.edu" an email with the subject "join".</p>
     </div>
     <div class="padding">
     <h2>Facebook</h2>
