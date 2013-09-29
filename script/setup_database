@@ -1,3 +1,5 @@
+#! /usr/bin/env php
+
 <?php
 
 require("../inc/database.php");
@@ -70,3 +72,5 @@ CREATE TABLE `TopicToPosts` (
 ";
 
 $mysqli->query($sql);
+
+?>
