@@ -1,3 +1,12 @@
 #! /bin/bash
 
 bundle install
+
+if [ ! -f "inc/database.php" ]; then
+  cp inc/database.php.example inc/database.php
+  echo "inc/database.php has been created. Populate it with your MySQL server
+  details the run ./script/setup_database"
+else
+  echo "Looks like you already have an ./inc/database.php. You're ready to
+  rock."
+fi
