@@ -6,10 +6,6 @@
     <title>Log In</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand:700" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/scripts.js"></script>
-    <script type="text/javascript" src="scripts/navigation.js" ></script>
-    <script type="text/javascript" src="scripts/jquery-bp.js" ></script>
-
 
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
