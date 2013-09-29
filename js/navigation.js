@@ -8,19 +8,20 @@ var nav = [ '#index', '#about', '#employers', '#login', '#rate', '#discuss', '#a
 
 $(document).ready(function(){
 	setBkgPos();
-	
+
 	for ( i = 0; i < nav.length; i++ ) {
 		$(nav[i]).bind( 'mouseover', mMouseOver );
 		$(nav[i]).bind( 'mouseout', mMouseOut );
 		$(nav[i]).bind( 'click', mClick );
 	}
-	
+
 	for ( i = 0; i < nav.length; i++ ) {
-		// element with ‘active’ class will  start animation 
+		// element with Â‘activeÂ’ class will  start animation
+        if ( typeof($(nav[i]).get(0)) === "undefined" ) { continue; }
 		if ( $(nav[i]).get(0).className.indexOf('active') >= 0 ){
 			$(nav[i])
 				.animate({ backgroundPosition:'(' + _getHPos( nav[i] ) +'px -30px}'},'fast',
-					function(){ 
+					function(){
 						$(this)
 							.children()
 								.animate({backgroundPosition:'(0px -40px)'},'fast')
@@ -33,13 +34,13 @@ $(document).ready(function(){
 							.children()
 								.animate( {backgroundPosition:'(0px -45px)'},'fast',function(){
 											$(parent).animate({backgroundPosition:'(' + _getHPos( parent.id ) +'px 25px)'},'fast');
-											$(parent).css({backgroundImage: 'url(img/nav.png)'});
+											$(parent).css({backgroundImage: 'url(images/nav.png)'});
 									});
 					});
 			break;
 		}
 	}
-}); 
+});
 
 function _getHPos( id )
 {
@@ -47,8 +48,8 @@ function _getHPos( id )
 		if ( '#' + id == nav[i] ){
 			return i*(-70);
 		}
-	}	
-	
+	}
+
 	return 0;
 }
 
@@ -62,20 +63,20 @@ function setBkgPos()
 
 function mMouseOver(e)
 {
-	// element with ‘active’ class will ignore this event and do nothing
+	// element with Â‘activeÂ’ class will ignore this event and do nothing
 	if ( this.className.indexOf('active') >= 0  ){
 		return;
 	}
-	
+
 	$(this)
 		// stop any animation that took place before this
 		.stop()
 		// step 1. change the image file
-		.css({backgroundImage: 'url(img/nav-over.png)',cursor: 'pointer'})
+		.css({backgroundImage: 'url(images/nav-over.png)',cursor: 'pointer'})
 		// step.2 move up the navigation item a bit
 		.animate({ backgroundPosition:'(' + _getHPos( this.id ) +'px -30px}'},"fast",
 			// this section will be executed after the step.2 is done
-			function(){ 
+			function(){
 				$(this)
 					.children()
 						// step. 3 move the white box down
@@ -95,31 +96,31 @@ function mMouseOver(e)
 						.animate( {backgroundPosition:'(0px -45px)'},"fast",
 							// this section will be executed after the step.5 is done
 							function(){
-								// step.6 change the image to its original image	
-								$(parent).css({backgroundImage: 'url(img/nav.png)'});
+								// step.6 change the image to its original image
+								$(parent).css({backgroundImage: 'url(images/nav.png)'});
 							});
-			
+
 			});
 }
 
 function mMouseOut(e)
-{			
-	// element with ‘active’ class will ignore this event and do nothing
+{
+	// element with Â‘activeÂ’ class will ignore this event and do nothing
 	if ( this.className.indexOf('active') >= 0  ){
 		return;
 	}
-	
+
 	$(this)
 		// stop any animation that took place before this
 		.stop()
 		// step.1 move down navigation item
-		.animate({backgroundPosition:'(' + _getHPos( this.id ) +'px 40px )'}, "fast", 
+		.animate({backgroundPosition:'(' + _getHPos( this.id ) +'px 40px )'}, "fast",
 			// this section will be executed after the step.1 is done
 			function(){
 				// step.2 white box move really fast
 				$(this).children().animate({backgroundPosition:'(0px 70px)'}, "fast");
 				// step 3. move navigation item up
-				$(this).animate( {backgroundPosition:'(' + _getHPos( this.id ) +'px -40px)'}, "fast", 
+				$(this).animate( {backgroundPosition:'(' + _getHPos( this.id ) +'px -40px)'}, "fast",
 					// this section will be executed after the step.3 is done
 					function(){
 						// step 4. move navigation item ot its original position
@@ -131,7 +132,7 @@ function mMouseOut(e)
 							})
 					})
 			})
-		.css({backgroundImage: 'url(img/nav.png)', cursor: ''});
+		.css({backgroundImage: 'url(images/nav.png)', cursor: ''});
 }
 
 function mClick(e)
