@@ -2,7 +2,7 @@
 
 <?php
 
-require("../inc/database.php");
+require("inc/database.php");
 
 $sql = "
 CREATE TABLE `Classes` (
